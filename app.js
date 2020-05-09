@@ -6,6 +6,10 @@ const path = require('path');
 const db = require('./db');
 const collection = 'todo';
 
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
 db.connect((err) => {
   if (err) {
     console.log('unable to connect to database');
