@@ -3,8 +3,8 @@ const ObjectId = require('mongodb').ObjectID;
 const dbname = 'crud_mongodb';
 
 // default location of where mongoDB located on local
-const url = 'mongodb://localhost:27107';
-const mongoOptions = { userNewUrlParser: true };
+const url = 'mongodb://localhost:27017';
+const mongoOptions = { useNewUrlParser: true };
 
 // no database yet
 const state = {
